@@ -1,0 +1,88 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('image\ 1.jpg');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    perspective: 1000px;
+
+}
+.container{
+    display: flex;
+       width: 50rem;
+    align-items: center;
+    justify-content: space-around;
+    height: 30rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(15px);
+}
+.right{
+       height: 100%;
+    align-items: start;
+     justify-content: space-evenly;  
+    display: flex; 
+     gap: 2rem; 
+     flex-direction: column;  
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.left{
+       height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    width: 22rem;
+    font-size: 20px;
+}
+.left i{
+    color: teal;
+}
+.content{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.form{
+     display: flex; 
+    align-items: start;
+    gap: 2rem;
+    flex-direction: column;
+    height: 20rem;
+}
+.form input{
+    height: 3rem;
+    width: 100%;
+    padding-left: 1rem;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    background: rgb(224, 224, 224);
+}
+textarea{
+    width: 100%;
+    padding-left: 1rem;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    background: rgb(224, 224, 224);
+}
+.container:hover{
+    transform: rotatey(20deg);
+}
